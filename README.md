@@ -14,7 +14,7 @@ Pokud máš v dokumentu citace ve formátu `[1]`, `[2]`, atd., můžeš je jedno
 Sub PrevestNaZavorky()
     Dim i As Integer
 
-    ' Upravit dle počtu citací – např. 1 až 99
+    ' Upravit dle poctu citaci – napr. 1 až 99
     For i = 1 To 99
         With Selection.Find
             .ClearFormatting
