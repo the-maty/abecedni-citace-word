@@ -80,7 +80,7 @@ Sub PrecislovatCitaceCesky()
         End With
     Next key
 
-    MsgBox "Citace zmeneny na pozadovany format z {{cislo}} na [cislo]", vbInformation
+    MsgBox "Citace zmeneny na pozadovany format z {{cislo}} na [cislo] podle pozadovaneho poradi", vbInformation
 End Sub
 ```
 
