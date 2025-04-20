@@ -80,7 +80,7 @@ Sub PrecislovatCitaceCesky()
         End With
     Next key
 
-    MsgBox "Citace přečíslovány podle českého abecedního pořadí!", vbInformation
+    MsgBox "Citace zmeneny na pozadovany format z {{cislo}} na [cislo]", vbInformation
 End Sub
 ```
 
@@ -126,7 +126,7 @@ Sub PrecislovatCitaceCesky_Mac()
         End With
     Next i
 
-    MsgBox "Citace přečíslovány (macOS verze).", vbInformation
+    MsgBox "Citace přečíslovány.", vbInformation
 End Sub
 ```
 
