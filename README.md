@@ -173,5 +173,5 @@ End Sub
 
 ---
 
-> Vytvořeno s láskou ♥️ xdd
+> Created by MaTy ♥️
 
