@@ -146,5 +146,5 @@ End Sub
 
 ---
 
-> Vytvořeno s láskou ke strukturálnímu myšlení a české abecedě 🇨🇿 ✍️
+> Vytvořeno s láskou ♥️ xdd
 
