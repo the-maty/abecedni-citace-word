@@ -6,7 +6,7 @@ Tento návod ti ukazuje, jak jednoduše přečíslovat zdroje ve Word dokumentu 
 
 
 ## 🔁 Pomocný skript: [číslo] → {{číslo}}
-ℹ️ Nevíš jak na spuštění makra? klikni sem: Jak spustit VBA makro ve Windows
+> ℹ️ Přeskočit na: [Windows návod](#-windows-jak-spustit-vba-makro) | [macOS návod](#-macos-jak-spustit-vba-makro)
 Pokud máš v dokumentu citace ve formátu `[1]`, `[2]`, atd., můžeš je jednoduše převést zpět na `{{1}}`, `{{2}}` pomocí tohoto skriptu:
 
 ```vba
