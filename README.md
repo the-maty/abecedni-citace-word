@@ -1,6 +1,33 @@
 # 🔄 Převod číslovaných citací pomocí VBA makra ve Wordu
 
-Tento návod ti ukáže, jak jednoduše přečíslovat zdroje ve Word dokumentu podle nového (např. abecedního) pořadí pomocí VBA makra. Funguje na Windows i macOS.
+Tento návod ti ukazuje, jak jednoduše přečíslovat zdroje ve Word dokumentu podle nového (např. abecedního) pořadí pomocí VBA makra. Funguje na Windows i macOS.
+
+---
+
+## 🔁 Pomocný skript: [číslo] → {{číslo}}
+
+Pokud máš v dokumentu citace ve formátu `[1]`, `[2]`, atd., můžeš je jednoduše převést zpět na `{{1}}`, `{{2}}` pomocí tohoto skriptu:
+
+```vba
+Sub PrevestNaZavorky()
+    Dim i As Integer
+
+    ' Upravit dle počtu citací – např. 1 až 99
+    For i = 1 To 99
+        With Selection.Find
+            .ClearFormatting
+            .Replacement.ClearFormatting
+            .Text = "[" & i & "]"
+            .Replacement.Text = "{{" & i & "}}"
+            .Forward = True
+            .Wrap = wdFindContinue
+            .Execute Replace:=wdReplaceAll
+        End With
+    Next i
+
+    MsgBox "Hotovo! Všechny citace převedeny na {{x}} formát.", vbInformation
+End Sub
+```
 
 ---
 
@@ -139,7 +166,7 @@ End Sub
 
 ---
 
-## 🧼 Tipy na závěr
+## 🫼 Tipy na závěr
 
 - Doporučuji si před spuštěním makra **uložit zálohu dokumentu**.
 - Funkční v rámci ruční citace [1], [2],...
