@@ -44,7 +44,7 @@ Sub PrecislovatCitaceCesky()
     Dim mapping As Object
     Set mapping = CreateObject("Scripting.Dictionary")
 
-    mapping.Add "11", "1"
+    mapping.Add "11", "1" ' První reprezentuje {{11}} druhý nový [1]
     mapping.Add "1", "2"
     mapping.Add "6", "3"
     mapping.Add "12", "4"
@@ -111,8 +111,8 @@ Sub PrecislovatCitaceCesky_Mac()
     Dim values As Variant
     Dim i As Integer
 
-    keys = Array("11", "1", "6", "12", "13", "8", "10", "19", "21", "7", "2", "15", "3", "16", "20", "18", "14", "17", "9", "22", "4", "5")
-    values = Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22")
+    keys = Array("11", "1", "6", "12", "13", "8", "10", "19", "21", "7", "2", "15", "3", "16", "20", "18", "14", "17", "9", "22", "4", "5")    ' První reprezentuje {{11}}
+    values = Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22") ' Druhý reprezentuje nový [1]
 
     For i = LBound(keys) To UBound(keys)
         With Selection.Find
