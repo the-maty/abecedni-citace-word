@@ -2,10 +2,10 @@
 
 ## 🚀 Jak na to? – Doporučený postup
 
-> 🔄 **Krok 1:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
->
-> 🤖 **Krok 2:** Poté použij full automatický nástroj:  
-> 👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
+🔄 **Krok 1:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
+
+🤖 **Krok 2:** Poté použij full automatický nástroj:  
+👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
 
 ---
 
