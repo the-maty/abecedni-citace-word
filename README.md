@@ -1,6 +1,6 @@
 # Full automatický tool  [➡️ ZDE ⬅️](https://the-maty.github.io/citace-sorter/)
 
-# 🔄 Převod číslovaných citací pomocí VBA makra ve Wordu
+# 🔄 Step-by-step návod pro převod číslovaných citací pomocí VBA makra ve Wordu
 
 Tento návod ti ukazuje, jak jednoduše přečíslovat zdroje ve Word dokumentu podle nového (např. abecedního) pořadí pomocí VBA makra. Funguje na Windows i macOS.
 
