@@ -1,4 +1,4 @@
-# Full automatický tool  [ZDE](https://the-maty.github.io/citace-sorter/)
+# Full automatický tool  [➡️ ZDE](https://the-maty.github.io/citace-sorter/)
 
 # 🔄 Převod číslovaných citací pomocí VBA makra ve Wordu
 
