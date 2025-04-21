@@ -1,9 +1,10 @@
 # 📚 Citace Sorter – přečíslování zdrojů ve Wordu
 
-> 🟢 **Doporučený postup:**
+## 🚀 Jak na to? – Doporučený postup
+
+> 🔄 **Krok 1:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
 >
-> 1. 🔄 Nejprve spusť makro `PrevestNaZavorky` – převede [1] → {{1}}  
-> 2. 🤖 Poté použij full automatický nástroj pro přečíslování:  
+> 🤖 **Krok 2:** Poté použij full automatický nástroj:  
 > 👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
 
 ---
@@ -56,7 +57,7 @@ Po spuštění makra pro přečíslování se tyto značky automaticky přepíš
 
 ---
 
-## 🫯 Windows: Jak spustit VBA makro
+## 🪟 Windows: Jak spustit VBA makro
 
 ### 1. Otevři Word dokument  
 ### 2. Stiskni `Alt + F11` – otevře se VBA editor  
@@ -163,12 +164,13 @@ End Sub
 
 ---
 
-## 🩼 Tipy na závěr
+## 🫼 Tipy na závěr
 
-- 📀 **Před spuštěním si ulož zálohu dokumentu**
+- 💾 **Před spuštěním si ulož zálohu dokumentu**
 - ✅ Tool funguje pro ručně psané citace ve Wordu ve formátu `[1]`, `[2]`, …
 - 🌐 Full automatický nástroj: [citace-sorter](https://the-maty.github.io/citace-sorter/)
 
 ---
 
 > Created by MaTy ♥️
+
