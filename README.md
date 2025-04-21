@@ -1,22 +1,22 @@
-# Full automatický tool  [➡️ ZDE ⬅️](https://the-maty.github.io/citace-sorter/)
+# 📚 Citace Sorter – přečíslování zdrojů ve Wordu
 
-# 🔄 Step-by-step návod pro převod číslovaných citací pomocí VBA makra ve Wordu
-
-Tento návod ti ukazuje, jak jednoduše přečíslovat zdroje ve Word dokumentu podle nového (např. abecedního) pořadí pomocí VBA makra. Funguje na Windows i macOS.
+> 🟢 **Doporučený postup:**
+>
+> 1. 🔄 Nejprve spusť makro `PrevestNaZavorky` – převede [1] → {{1}}  
+> 2. 🤖 Poté použij full automatický nástroj pro přečíslování:  
+> 👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
 
 ---
 
+## 🔁 Pomocný skript: převod z `[x]` na `{{x}}`
 
-## 🔁 Pomocný skript: [číslo] → {{číslo}}
-> ℹ️ Přeskočit na: [Windows návod](#-windows-jak-spustit-vba-makro) | [macOS návod](#-macos-jak-spustit-vba-makro)
-> 
-Pokud máš v dokumentu citace ve formátu `[1]`, `[2]`, atd., můžeš je jednoduše převést zpět na `{{1}}`, `{{2}}` pomocí tohoto skriptu:
+Pokud máš v dokumentu citace ve formátu `[1]`, `[2]`, atd., můžeš je jednoduše převést zpět na `{{1}}`, `{{2}}` pomocí tohoto VBA makra:
 
 ```vba
 Sub PrevestNaZavorky()
     Dim i As Integer
 
-    ' Upravit dle poctu citaci – napr. 1 až 99
+    ' Upravit dle počtu citací – např. 1 až 99
     For i = 1 To 99
         With Selection.Find
             .ClearFormatting
@@ -37,7 +37,7 @@ End Sub
 
 ## 📁 Struktura citací v dokumentu
 
-V dokumentu musí být citace zapsané dočasně v tomto tvaru:
+Citace musí být dočasně zapsané v tomto tvaru:
 
 ```text
 {{1}}, {{2}}, {{3}}, ...
@@ -48,7 +48,7 @@ Například:
 Jak uvádí {{3}}, databáze jsou klíčové...
 ```
 
-Po spuštění makra se tyto značky automaticky přepíšou na:
+Po spuštění makra pro přečíslování se tyto značky automaticky přepíšou na:
 
 ```text
 [13], [5], [21], ...
@@ -56,26 +56,22 @@ Po spuštění makra se tyto značky automaticky přepíšou na:
 
 ---
 
-## 🪟 Windows: Jak spustit VBA makro
+## 🫯 Windows: Jak spustit VBA makro
 
-### 1. Otevři Word dokument
-
-### 2. Stiskni `Alt + F11`
-- Tím se otevře editor jazyka **Visual Basic for Applications** (VBA).
-
-### 3. Vlevo v panelu „Project“
-- Pravým klikni na `Normal` nebo název dokumentu
+### 1. Otevři Word dokument  
+### 2. Stiskni `Alt + F11` – otevře se VBA editor  
+### 3. Vlevo v panelu „Project“:
+- Pravým klikni na `Normal` nebo název dokumentu  
 - Zvol **Insert → Module**
 
-### 4. Vlož kód makra
-- Zkopíruj a vlož celý kód níže do okna modulu:
+### 4. Vlož kód makra:
 
 ```vba
 Sub PrecislovatCitaceCesky()
     Dim mapping As Object
     Set mapping = CreateObject("Scripting.Dictionary")
 
-    mapping.Add "11", "1" ' První reprezentuje {{11}} druhý nový [1]
+    mapping.Add "11", "1"
     mapping.Add "1", "2"
     mapping.Add "6", "3"
     mapping.Add "12", "4"
@@ -115,26 +111,24 @@ Sub PrecislovatCitaceCesky()
 End Sub
 ```
 
-### 5. Zavři editor (Alt + Q)
-
-### 6. Stiskni `Alt + F8`
-- Vyber makro `PrecislovatCitaceCesky`
-- Klikni na **Spustit**
+### 5. Zavři editor (`Alt + Q`)  
+### 6. Spusť makro pomocí `Alt + F8`  
+- Vyber `PrecislovatCitaceCesky`  
+- Klikni **Spustit**
 
 ---
 
 ## 🍎 macOS: Jak spustit VBA makro
 
-### 1. Otevři Word dokument
-
+### 1. Otevři Word dokument  
 ### 2. Horní lišta → **Nástroje → Editor maker**  
 _(v angličtině Tools → Visual Basic Editor)_
 
 ### 3. V levém panelu „Project“:
-- Pravým klikni na `Normal` nebo název dokumentu
+- Pravým klikni na `Normal` nebo název dokumentu  
 - Zvol **Insert → Module**
 
-### 4. Vlož MAC-kompatibilní kód (bez Windows-only objektů):
+### 4. Vlož MAC-kompatibilní kód:
 
 ```vba
 Sub PrecislovatCitaceCesky_Mac()
@@ -142,8 +136,8 @@ Sub PrecislovatCitaceCesky_Mac()
     Dim values As Variant
     Dim i As Integer
 
-    keys = Array("11", "1", "6", "12", "13", "8", "10", "19", "21", "7", "2", "15", "3", "16", "20", "18", "14", "17", "9", "22", "4", "5")    ' První reprezentuje {{11}}
-    values = Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22") ' Druhý reprezentuje nový [1]
+    keys = Array("11", "1", "6", "12", "13", "8", "10", "19", "21", "7", "2", "15", "3", "16", "20", "18", "14", "17", "9", "22", "4", "5")
+    values = Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22")
 
     For i = LBound(keys) To UBound(keys)
         With Selection.Find
@@ -161,8 +155,7 @@ Sub PrecislovatCitaceCesky_Mac()
 End Sub
 ```
 
-### 5. Zavři editor (`Cmd + W`)
-
+### 5. Zavři editor (`Cmd + W`)  
 ### 6. Spusť makro:
 - Horní lišta: **Nástroje → Makro → Makra…**
 - Vyber `PrecislovatCitaceCesky_Mac`
@@ -170,12 +163,12 @@ End Sub
 
 ---
 
-## 🫼 Tipy na závěr
+## 🩼 Tipy na závěr
 
-- Doporučuji si před spuštěním makra **uložit zálohu dokumentu**.
-- Funkční v rámci ruční citace [1], [2],...
+- 📀 **Před spuštěním si ulož zálohu dokumentu**
+- ✅ Tool funguje pro ručně psané citace ve Wordu ve formátu `[1]`, `[2]`, …
+- 🌐 Full automatický nástroj: [citace-sorter](https://the-maty.github.io/citace-sorter/)
 
 ---
 
 > Created by MaTy ♥️
-
