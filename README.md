@@ -4,7 +4,7 @@
 
 🔄 **Krok 1:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
 
-🤖 **Krok 2:** Poté použij full automatický nástroj:
+🤖 **Krok 2:** Použij full automatický nástroj:
 
 👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
 
