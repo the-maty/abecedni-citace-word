@@ -1,6 +1,6 @@
 # 📚 Citace Sorter – přečíslování zdrojů ve Wordu
 
-## 🚀 Jak na to? – Doporučený postup
+## 🚀 Jak na to? – (Doporučený postup)
 
 🔄 **Krok 1:** Zkopíruj si bibliografické odkazy ještě s  `[1]` označením než je převedeme na `{{1}}`.
 
