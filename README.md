@@ -6,9 +6,7 @@
 
 🤖 **Krok 2:** Použij full automatický nástroj pro vygenerování skriptu:
 
-👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
-
-> **modul si jen připrav do wordu, spouštění je až poslední krok!**
+👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)** > **modul si jen připrav do wordu, spouštění je až poslední krok!**
 
 🔄 **Krok 3:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
 
