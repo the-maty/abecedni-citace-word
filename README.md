@@ -7,7 +7,8 @@
 🤖 **Krok 2:** Použij full automatický nástroj pro vygenerování skriptu:
 
 👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
-👉 **(modul si jen připrav spustit až na konec!)**
+
+**(modul si jen připrav spustit až na konec!)**
 
 🔄 **Krok 3:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
 
