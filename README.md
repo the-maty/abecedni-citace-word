@@ -2,13 +2,16 @@
 
 ## 🚀 Jak na to? – (Doporučený postup)
 
-🔄 **Krok 1:** Zkopíruj si bibliografické odkazy ještě s  `[1]` označením než je převedeme na `{{1}}`.
+🔄 **Krok 1:** Zkopíruj si bibliografické odkazy ještě s  `[1]` označením než je převedeme na `{{1}}`
 
-🔄 **Krok 2:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
-
-🤖 **Krok 3:** Použij full automatický nástroj:
+🤖 **Krok 2:** Použij full automatický nástroj pro vygenerování skriptu:
 
 👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**
+👉 **(modul si jen připrav spustit až na konec!)**
+
+🔄 **Krok 3:** Spusť makro `PrevestNaZavorky` ve Wordu – převede `[1]` → `{{1}}`
+
+🤖 **Krok 4:** Spusť makro jež bylo vygenerování zde 👉 **[➡️ Otevřít tool ⬅️](https://the-maty.github.io/citace-sorter/)**:
 
 ---
 
